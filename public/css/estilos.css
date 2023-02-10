@@ -1,0 +1,64 @@
+body {
+  overflow: scroll;
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.textarea {
+  font-size: 20px;
+  height: 130px;
+  border: 3px solid black;
+}
+
+.textarea-disabled {
+  background-color: lightgray;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.border-correct {
+  border: 3px solid green;
+}
+
+.border-wrong {
+  border: 3px solid red;
+}
+
+.points {
+  display: none;
+}
+
+#error {
+  color: red;
+  display: none;
+}
+
+#spinner {
+  display: none;
+}
+
+#phrase-id {
+  width: 40px;
+}
+
+#btn-sync {
+  float: right;
+}
+
+.select-user {
+  display: inline-block;
+  width: 150px;
+}
+
+.selectize-input {
+  vertical-align: middle;
+}
+
+#users {
+  display: block;
+}

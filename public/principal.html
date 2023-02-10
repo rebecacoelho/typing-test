@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Teste sua velocidade de digitação</h1>
+        <p class="text center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius, voluptas vel at culpa incidunt tenetur tempora quo odit iusto aspernatur voluptates, ducimus neque? Nisi praesentium animi iure nesciunt distinctio.</p>
+
+        <div class="center">
+            <img src="img/spinner.gif" alt="carregando página" id="spinner">
+            <p id="error">Ocorreu um erro, por favor tente novamente.</p>
+        </div>
+
+        <ul class="information center">
+            <li>
+                <i class="small material-icons icon">description</i>
+                <span id="text-length">5</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icon">query_builder</i>
+                <span id="timer">10</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="textarea" cols="40" rows="8"></textarea>
+        
+        <div class="buttons">
+            <button class="tooltip btn-floating btn-large waves-effect waves-light red" id="btn-reload" title="Reinicar jogo">
+                <i class="material-icons">restore</i>
+            </button>
+
+            <button class="tooltip btn-floating btn-large waves-effect waves-light green" id="btn-points" title="Ver tabela de pontos">
+                <i class="material-icons">assignment</i>
+            </button>
+
+            <button class="tooltip btn-floating btn-large waves-effect waves-light blue" id="btn-change" title="Mudar frase">
+                <i class="material-icons">shuffle</i>
+            </button>
+
+            <button class="tooltip btn-floating btn-large waves-effect waves-light cyan" id="btn-phrase-id" title="Escolher nova frase">
+                <i class="material-icons">repeat_one</i>
+            </button>
+
+            <input type="number" id="phrase-id" min="0">
+            
+            <div class="tooltip select-user" title="Inserir nome do(s) jogador(es)">
+                <select id="users">
+                    
+                </select>
+            </div>
+
+            <button class="tooltip btn-floating btn-large waves-effect waves-light yellow" id="btn-sync" title="Sincronizado com sucesso!">
+                <i class="material-icons">swap_vert</i>
+            </button>
+        </div>
+
+        <ul class="center">
+            <li><span id="cont-caracteres">0</span> caracteres</li>
+            <li><span id="cont-words">0</span> palavras</li>
+        </ul>
+
+        <section class="points">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número de Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/points.js"></script>
+    <script src="js/phrases.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+</body>
+</html>
